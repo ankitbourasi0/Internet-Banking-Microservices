@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+    fetch-registry: false ## otherwise eureka will try to register this server as a client to itself by default config,
+    register-with-eureka: false
